@@ -26,3 +26,4 @@ const fetchPokemon = async (name) => {
 -  Config QueryClient y QueryClientProvider ✔️
 -  Implemented useQuery ✔️
 -  Fetch and render some data ✔️
+-  Dispaly pokemon data ✔️

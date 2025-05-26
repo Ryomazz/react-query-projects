@@ -30,7 +30,7 @@ function App() {
          <form className="form" onSubmit={handleSubmit}>
             <input
                type="text"
-               placeholder="Pickachu, Charizard, Bulbasur..."
+               placeholder="Pikachu, Charizard, Bulbasur..."
                name="name"
             />
             <button>Search</button>
@@ -40,6 +40,14 @@ function App() {
          {data && (
             <section>
                <h2>{String(data?.name).toUpperCase()} </h2>
+               <img src={data?.sprites?.front_default} alt={data?.name} />
+               {data?.stats.map((stat) => {
+                  return (
+                     <p key={stat.stat.name}>
+                        {stat.stat.name} --- {stat.base_stat}{" "}
+                     </p>
+                  );
+               })}
             </section>
          )}
       </div>
