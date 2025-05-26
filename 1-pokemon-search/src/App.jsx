@@ -48,6 +48,10 @@ function App() {
                      </p>
                   );
                })}
+               <h3>Types</h3>
+               {data?.types?.map((type) => {
+                  return <p key={type.type.name}> {type.type.name} </p>;
+               })}
             </section>
          )}
       </div>
