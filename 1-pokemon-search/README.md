@@ -1,8 +1,28 @@
-# React + Vite
+# **1️⃣ Proyecto 1: "Buscador de Pokémon"**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**📌 Conceptos aprendidos:**
 
-Currently, two official plugins are available:
+-  Primer contacto con `useQuery`.
+-  Fetching básico de API (`fetch` o `axios`).
+-  Manejo de estados de carga (`isLoading`) y error (`isError`).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**🎯 Características:**
+
+-  Buscar Pokémon por nombre o ID.
+-  Mostrar imagen, tipo y stats.
+
+**🔗 API Sugerida:**
+
+```js
+const fetchPokemon = async (name) => {
+   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+   return res.json();
+};
+```
+
+## Steps ✔️
+
+-  Show first interface ✔️
+-  Config QueryClient y QueryClientProvider ✔️
+-  Implemented useQuery ✔️
+-  Fetch and render some data ✔️
