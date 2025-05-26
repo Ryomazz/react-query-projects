@@ -1,8 +1,27 @@
-# React + Vite
+# **2️⃣ Proyecto 2: "Lista de Posts con Paginación"**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**📌 Conceptos aprendidos:**
 
-Currently, two official plugins are available:
+-  Paginación con `queryKey` dinámico (ej: `['posts', page]`).
+-  Botones "Anterior/Siguiente" para navegar entre páginas.
+-  Invalidación de cache al cambiar de página.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**🎯 Características:**
+
+-  Mostrar 10 posts por página.
+-  Botones para navegar entre páginas.
+
+**🔗 API Sugerida:**
+
+```js
+const fetchPosts = async (page) => {
+   const res = await fetch(
+      `https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=10`
+   );
+   return res.json();
+};
+```
+
+---
+
+## Steps ✔️
