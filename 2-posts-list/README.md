@@ -25,3 +25,5 @@ const fetchPosts = async (page) => {
 ---
 
 ## Steps ✔️
+
+-  Config QueryClient and QueryClientProvider Render a basic interface ✔️
