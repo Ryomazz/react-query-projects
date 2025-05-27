@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import Buttons from "./Buttons";
+import Buttons from "./Buttons.1";
 
 async function fetchPostsUsers(page) {
    try {
