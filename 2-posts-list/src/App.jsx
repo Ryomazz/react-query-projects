@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-
-let url = `https://jsonplaceholder.typicode.com/posts?_page=1&_limit=10`;
+import Buttons from "./Buttons";
 
 async function fetchPostsUsers(page) {
    try {
@@ -13,19 +12,6 @@ async function fetchPostsUsers(page) {
       return await response.json();
    } catch (error) {
       throw new Error(error.message);
-   }
-}
-
-function Buttons({ page, setPage }) {
-   if (page === 1) {
-      return <button onClick={() => setPage(page + 1)}>Next Page ➡️</button>;
-   } else {
-      return (
-         <div>
-            <button onClick={() => setPage(page - 1)}>Prevoius Page ⬅️</button>
-            <button onClick={() => setPage(page + 1)}>Next Page ➡️</button>
-         </div>
-      );
    }
 }
 

@@ -27,3 +27,6 @@ const fetchPosts = async (page) => {
 ## Steps ✔️
 
 -  Config QueryClient and QueryClientProvider Render a basic interface ✔️
+-  Fetch and render first data ✔️
+-  Implemented buttons for navigation ✔️
+-  Create a component Buttons for having better modular code ✔️
