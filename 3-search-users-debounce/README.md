@@ -1,8 +1,28 @@
-# React + Vite
+# **3️⃣ Proyecto 3: "Buscador de Usuarios con Debounce"**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**📌 Conceptos aprendidos:**
 
-Currently, two official plugins are available:
+-  Búsqueda en tiempo real con `debounce` (para evitar llamadas excesivas a la API).
+-  `queryKey` dependiente de input (`['users', searchTerm]`).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**🎯 Características:**
+
+-  Input de búsqueda que espera 300ms antes de hacer fetch.
+-  Lista de usuarios filtrados.
+
+**🔗 API Sugerida:**
+
+```js
+const fetchUsers = async (searchTerm) => {
+   const res = await fetch(
+      `https://jsonplaceholder.typicode.com/users?q=${searchTerm}`
+   );
+   return res.json();
+};
+```
+
+---
+
+## Steps ✔️
+
+-  Implement the first interface
