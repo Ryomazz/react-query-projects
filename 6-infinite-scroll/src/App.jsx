@@ -52,7 +52,7 @@ function App() {
                               {article?.title}
                            </h2>
                            <h3>{article.description} </h3>
-                           <p>{article?.content} </p>
+                           <p>{article?.content}</p>
                         </section>
                      );
                   })}
